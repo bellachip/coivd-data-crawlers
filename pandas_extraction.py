@@ -1,0 +1,1 @@
+import pandas as pdimport numpy as npdf = pd.read_csv("/Users/Bella/Desktop/us-states_death_cases_raw.csv")df_WA = (df[df["state"] == "Washington"])df_OR = (df[df["state"] == "Oregon"])df_OR.to_csv("OR_death_cases.csv")df_WA.to_csv("WA_death_cases.csv")print(df_OR)print(df_WA)
